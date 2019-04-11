@@ -1,0 +1,53 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  margin: 0 auto 25px;
+  padding-top: 30px;
+  background-color: #fff;
+  color: #000;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0 auto;
+  letter-spacing: 0.3rem;
+  color: #000;
+}
+
+.chkbox {
+  display: inline-block;
+  margin: 0 5px;
+  font-size: 1rem;
+}
+
+.chkboxWrap {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.highcharts-container {
+  margin-top: 1rem;
+  background-color: #fff;
+}
+
+.highcharts-root {
+  background-color: #000;
+}
+
+text {
+  color: #fff;
+  fill: #000 !important;
+}

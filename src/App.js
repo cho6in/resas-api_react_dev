@@ -67,9 +67,9 @@ class App extends Component {
 
   renderElem(props) {
     return (
-      <div class="chkbox" key={props.prefCode}>
+      <div className="chkbox" key={props.prefCode}>
         <input id={props.prefCode - 1} type="checkbox" checked={this.state.selected_pref[props.prefCode - 1]}  onChange={() => this.changePrefSelect(props.prefCode - 1)} />
-        <label for={props.prefCode - 1}>{props.prefName}</label>
+        <label htmlFor={props.prefCode - 1}>{props.prefName}</label>
       </div>
     );
   }
@@ -101,9 +101,9 @@ class App extends Component {
 
     return (
       <div>
-        <h1 class="title">Population Trends in japan</h1>
-        <h2 class="subtitle">都道府県</h2>
-        <div class="chkboxWrap">{Object.keys(prefObj)
+        <h1 className="title">Population Trends in japan</h1>
+        <h2 className="subtitle">都道府県</h2>
+        <div className="chkboxWrap">{Object.keys(prefObj)
           .map(i => this.renderElem(prefObj[i]))}</div>
         <HighchartsReact highcharts={Highcharts} options={chartOptions} />
       </div>
